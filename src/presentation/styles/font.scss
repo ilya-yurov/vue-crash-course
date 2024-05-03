@@ -1,0 +1,41 @@
+// Variables
+// Font size
+$font-size-primary: 16px;
+$font-size-secondary: 14px;
+$font-size-tertiary: 12px;
+$font-size-quaternary: 10px;
+
+// Font weight
+$font-weight-primary: 400;
+$font-weight-secondary: 500;
+$font-weight-tertiary: 700;
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Roboto400.woff2') format('woff2'),
+  url('/fonts/Roboto400.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/Roboto500.woff2') format('woff2'),
+  url('/fonts/Roboto500.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/Roboto700.woff2') format('woff2'),
+  url('/fonts/Roboto700.woff') format('woff');
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: $font-size-primary;
+  font-weight: $font-weight-primary;
+}
