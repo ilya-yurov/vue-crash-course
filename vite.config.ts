@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config';
 import vue from '@vitejs/plugin-vue'
 import AutoImport from "unplugin-auto-import/vite";
 import { fileURLToPath, URL } from "node:url";
@@ -15,9 +15,13 @@ export default defineConfig({
                 enabled: true,
                 filepath: "./.eslintrc-auto-import.json",
                 globalsPropValue: true
-            }
+            },
         }),
     ],
+    test: {
+        globals: true,
+        environment: 'happy-dom'
+    },
     resolve: {
         alias: {
             "@": fileURLToPath(new URL("./src", import.meta.url)),
